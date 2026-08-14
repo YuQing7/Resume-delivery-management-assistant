@@ -14,7 +14,8 @@ from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, QH
 from PyQt6.QtCore import Qt, QUrl, QTimer, QDateTime
 from PyQt6.QtGui import QFont, QColor, QDesktopServices
 
-DB_FILE = "job_tracker.db"
+DB_FILE = os.path.expanduser("~/Documents/job_tracker.db")
+
 
 STATUS_OPTIONS = [
     "待投递", "已投递", "筛选中", "测评待完成", "测评已完成", 
